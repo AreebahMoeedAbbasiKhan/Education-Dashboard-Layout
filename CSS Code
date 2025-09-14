@@ -1,0 +1,153 @@
+:root{
+  --nav-bg: linear-gradient(to right,#0f172a,#1e293b);
+  --accent: #2563eb;         /* deep blue for buttons */
+  --card-bg: #ffffff;
+  --muted: #6b7280;
+  --page-bg: #f9fafb;
+  --sidebar-bg: #ffffff;
+  --hero-bg: linear-gradient(to bottom,#3b82f6,#60a5fa);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: "Nunito", system-ui, Arial;
+  background: var(--page-bg);
+  color:#0f172a;
+}
+
+/* Top nav */
+.topbar{
+  background: var(--nav-bg);
+  color:#fff;
+  padding:18px 30px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.brand{ font-size:24px; font-weight:700; }
+.topnav{ display:flex; gap:18px; }
+.topnav a{ color:#f1f5f9; text-decoration:none; font-weight:600; font-size:14px; }
+.topnav a:hover{ color:#93c5fd; }
+
+/* Container */
+.container{
+  max-width:1200px;
+  margin:26px auto;
+  padding:0 18px;
+}
+
+/* Hero */
+.hero{
+  background: var(--hero-bg);
+  color:#fff;
+  padding:30px;
+  border-radius:8px;
+  margin-bottom:18px;
+}
+.hero h1{ margin:0; font-size:28px; }
+.hero p{ margin:8px 0 0; }
+
+/* Layout grid */
+.grid{
+  display:grid;
+  grid-template-columns: 220px 1fr;
+  gap:18px;
+}
+
+/* Sidebar */
+.sidebar{
+  background: var(--sidebar-bg);
+  border-radius:6px;
+  padding:18px;
+  border:1px solid #e5e7eb;
+}
+.sidebar h3{ margin:0 0 12px; font-size:18px; }
+.nav-list{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:8px;}
+.nav-list li{
+  padding:8px; font-weight:600; cursor:pointer;
+  border-radius:4px; color:#1e293b;
+}
+.nav-list li:hover{ background: #f1f5f9; color:#2563eb; }
+
+/* Stats row */
+.stat-row{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:14px;
+  margin-bottom:14px;
+}
+.stat{
+  background:var(--card-bg);
+  padding:16px;
+  border-radius:6px;
+  border:1px solid #e5e7eb;
+}
+.stat h4{ margin:2px 0 6px; font-size:18px; }
+.stat p{ margin:0; color:var(--muted); font-size:13px; }
+
+/* Dashboard panels */
+.dashboard{ background: #fff; padding:16px; border-radius:6px; border:1px solid #e5e7eb; }
+.dash-grid{ display:grid; grid-template-columns: 1fr 1fr; gap:14px; }
+.panel{ background:#f9fafb; border-radius:6px; padding:14px; border:1px solid #e5e7eb; }
+.panel h5{ margin:0 0 8px; font-weight:700; color:#1e293b; }
+
+.users-box{ display:flex; flex-direction:column; gap:10px; }
+.user{
+  display:flex; align-items:center; gap:12px;
+  padding:8px; border-radius:6px; background:white; border:1px solid #e5e7eb;
+}
+.avatar{
+  width:40px; height:40px; border-radius:6px;
+  display:flex; align-items:center; justify-content:center;
+  background:#dbeafe; font-weight:700; color:#1e3a8a;
+}
+.user .meta{ font-weight:700; }
+.user .sub{ font-size:12px; color:var(--muted); }
+
+.chart-placeholder{
+  height:150px; display:flex; align-items:center; justify-content:center;
+  background:#e0f2fe; border-radius:4px; color:#1e3a8a;
+}
+
+/* Table */
+table{ width:100%; border-collapse:collapse; background:#fff; border:1px solid #e5e7eb; border-radius:4px; }
+thead th{ text-align:left; padding:10px; background:#f1f5f9; }
+tbody tr{ border-top:1px solid #e5e7eb; }
+tbody td{ padding:10px; }
+tbody tr:hover{ background:#f9fafb; }
+
+/* Lower grid */
+.lower-grid{ display:grid; grid-template-columns: 1fr 1fr; gap:14px; margin-top:12px; }
+
+/* Form */
+form{ display:flex; flex-direction:column; gap:10px; }
+form input{ padding:8px; border-radius:4px; border:1px solid #e5e7eb; }
+.form-actions{ display:flex; gap:8px; }
+.btn-primary{
+  flex:1; padding:8px; border-radius:4px; border:0;
+  background:var(--accent); color:white; font-weight:700; cursor:pointer;
+}
+.btn-secondary{
+  flex:1; padding:8px; border-radius:4px; border:1px solid #e5e7eb;
+  background:white; cursor:pointer;
+}
+.btn-primary:hover{ background:#1d4ed8; }
+.btn-secondary:hover{ background:#f1f5f9; }
+
+/* Footer */
+footer{
+  margin-top:20px; padding:12px;
+  background:#1e293b; color:#dbeafe;
+  text-align:center; border-radius:6px;
+}
+
+/* Responsive */
+@media (max-width:900px){
+  .grid{ grid-template-columns: 1fr; }
+  .stat-row{ grid-template-columns: 1fr; }
+  .dash-grid{ grid-template-columns: 1fr; }
+  .lower-grid{ grid-template-columns: 1fr; }
+  .topnav{ display:none; }
+  .hero h1{ font-size:22px; }
+}
