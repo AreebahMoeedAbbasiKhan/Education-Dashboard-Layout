@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EduTech Portal — Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top nav -->
+  <div class="topbar">
+    <div class="brand">EduTech Portal</div>
+    <nav class="topnav">
+      <a href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">Dashboard</a>
+      <a href="#">Profile</a>
+      <a href="#">Settings</a>
+      <a href="#">Logout</a>
+    </nav>
+  </div>
+
+  <div class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Advanced Responsive Dashboard</h1>
+      <p>Task: Build a complete multi-section dashboard with charts, sidebar, forms, and animations.</p>
+    </section>
+
+    <div class="grid">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h3>Sidebar Menu</h3>
+        <ul class="nav-list">
+          <li>Overview</li>
+          <li>Courses</li>
+          <li>Students</li>
+          <li>Messages</li>
+          <li>Settings</li>
+        </ul>
+      </aside>
+
+      <!-- Main -->
+      <main class="main">
+        <div class="stat-row">
+          <div class="stat">
+            <h4>Users</h4>
+            <p>Data / Chart</p>
+          </div>
+          <div class="stat">
+            <h4>Revenue</h4>
+            <p>Data / Chart</p>
+          </div>
+          <div class="stat">
+            <h4>Feedback</h4>
+            <p>Data / Chart</p>
+          </div>
+        </div>
+
+        <section class="dashboard">
+          <div class="dash-grid">
+            <!-- Users list -->
+            <div class="panel users-box">
+              <h5>Users</h5>
+              <div class="user">
+                <div class="avatar">AA</div>
+                <div>
+                  <div class="meta">Areebah Abbasi</div>
+                  <div class="sub">Student • Active</div>
+                </div>
+              </div>
+              <div class="user">
+                <div class="avatar">JM</div>
+                <div>
+                  <div class="meta">John Miller</div>
+                  <div class="sub">Instructor • Online</div>
+                </div>
+              </div>
+              <div class="user">
+                <div class="avatar">LR</div>
+                <div>
+                  <div class="meta">Lina Rodriguez</div>
+                  <div class="sub">Student • Idle</div>
+                </div>
+              </div>
+              <div class="user">
+                <div class="avatar">MK</div>
+                <div>
+                  <div class="meta">M. Khan</div>
+                  <div class="sub">TA • Active</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chart -->
+            <div class="panel">
+              <h5>Chart</h5>
+              <div class="chart-placeholder">(chart placeholder)</div>
+            </div>
+          </div>
+
+          <div class="lower-grid">
+            <!-- Table -->
+            <div class="panel">
+              <h5>Users Table</h5>
+              <table>
+                <thead>
+                  <tr><th>Name</th><th>Role</th><th>Last Active</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Areebah Abbasi</td><td>Student</td><td>Today • 15:12</td></tr>
+                  <tr><td>John Miller</td><td>Instructor</td><td>Today • 14:05</td></tr>
+                  <tr><td>Lina Rodriguez</td><td>Student</td><td>Yesterday • 19:30</td></tr>
+                  <tr><td>M. Khan</td><td>TA</td><td>2 days ago</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Form -->
+            <div class="panel">
+              <h5>Quick Form (Login / Signup)</h5>
+              <form onsubmit="event.preventDefault();">
+                <input type="text" placeholder="Full name">
+                <input type="email" placeholder="Email">
+                <div class="form-actions">
+                  <button type="submit" class="btn-primary">Sign up</button>
+                  <button type="button" class="btn-secondary">Login</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <footer>
+          © 2025 EduTech Portal Areebah Abbasi • HTML & CSS Assignment
+        </footer>
+      </main>
+    </div>
+  </div>
+
+</body>
+</html>
