@@ -17,23 +17,8 @@ It is ideal for learning, assignments, and practicing dashboard UI design.
 - Modern color scheme with hover effects  
 
 ---
-
-## 📂 Project Structure
-
----
-
 ## 🛠️ Technologies Used
 - HTML5  
 - CSS3 (Flexbox, Grid, Gradients, Hover effects)  
 
 ---
-
-## 📸 Preview
-(Add a screenshot of your dashboard here once hosted or captured.)
-
----
-
-## 💡 How to Use
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/edutech-dashboard.git
